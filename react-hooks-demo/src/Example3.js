@@ -3,42 +3,26 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 function Index1() {
-  var time;
-  function itemOneAction() {
-    time = setInterval(() => {
-      console.log('组件1');
-    }, 1000);
-  }
-
   useEffect(() => {
     console.log('组件1componentDidMount ');
     return () => {
-      console.log('组件1componentWillUnmount 清除定时器');
-      clearInterval(time);
+      console.log('组件1componentWillUnmount');
     }
   })
   return <div>
-    <h2 onClick={() => itemOneAction()}>开始定时器1</h2>
+    <h2>组件1</h2>
   </div>
 }
 
-function Index2() {
-  var time;
-  function itemTwoAction() {
-    time = setInterval(() => {
-      console.log('组件2');
-    }, 1000);
-  }
-
+function Index2() { 
   useEffect(() => {
-    console.log('组件2componentDidMount');
+    console.log('组件2componentDidMount ');
     return () => {
-      console.log('组件2componentWillUnmount 清除定时器');
-      clearInterval(time);
+      console.log('组件2componentWillUnmount');
     }
   })
   return <div>
-    <h2 onClick={() => itemTwoAction()}>开始定时器2</h2>
+    <h2>组件2</h2>
   </div>
 }
 
