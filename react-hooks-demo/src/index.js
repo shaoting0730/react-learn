@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 import Example1 from './Example1';
 import Example2 from './Example2';
 import Example3 from './Example3';
 import Example4 from './Example4';
 import Example5 from './Example5';
 import Example6 from './Example6';
+import ExampleClass from './Example-class';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
+    {/* <ExampleClass  /> */}
     <Example1 />
     <hr/> 
     <Example2 /> 
@@ -23,11 +24,11 @@ ReactDOM.render(
     <Example5/>
     <hr/>
     <Example6/>
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
