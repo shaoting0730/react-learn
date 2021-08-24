@@ -7,6 +7,7 @@ import Example3 from './Example3';
 import Example4 from './Example4';
 import Example5 from './Example5';
 import Example6 from './Example6';
+import Example7 from './Example7'; 
 import ExampleClass from './Example-class';
 
 
@@ -24,6 +25,8 @@ ReactDOM.render(
     <Example5/>
     <hr/>
     <Example6/>
+    <hr/>
+    <Example7/>
   </div>,
   document.getElementById('root')
 );
