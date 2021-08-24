@@ -7,6 +7,7 @@ function Example7() {
 
   return (
     <div>
+      <div>useMemo提升性能</div>
       <button onClick={() => setName(new Date().getTime())}>{name}</button>
       <button onClick={() => setContent(new Date().getTime())}>{content}</button>
       <Child name={name}>{content}</Child>
@@ -14,6 +15,7 @@ function Example7() {
   )
 }
 
+// 不使用useMemo,会造成不必要的性能开销
 // function Child({name,children}){
 //   function changeName(name){
 //       console.log('child执行了');
